@@ -4,13 +4,14 @@
   "description": "6-month full stack",
   "license": "ISC",
   "author": "Barun khanal",
-  "type": "module",
+  "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "readline-sync": "^1.4.10"
   }
 }
