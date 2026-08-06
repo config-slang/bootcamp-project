@@ -197,24 +197,32 @@ var readlineSync = require('readline-sync');
 //   console.log("Go!!!");
 
 // },4000)
-wrcCafe();
-function wrcCafe(){
-  console.log("Barun came to cafe.");
-    const orderCoffee = readlineSync.question("What would you like to order sir ?");
-    const coffeeMaker = new Promise((resolve,reject)=>{
-         console.log("Your coffee is preparing.")
-  const everythingsFine = true;
+// wrcCafe();
+// function wrcCafe(){
+//   console.log("Barun came to cafe.");
+//     const orderCoffee = readlineSync.question("What would you like to order sir ?");
+//     const coffeeMaker = new Promise((resolve,reject)=>{
+//          console.log("Your coffee is preparing.")
+//   const everythingsFine = true;
+//   setTimeout(()=>{
+//     if(everythingsFine){
+//       resolve("Your coffee is ready.")
+//     }else{
+//       reject("Failed to make coffee")
+//     }
+//   },3000)
+// })
+//      coffeeMaker.then((caffe)=>{
+//       console.log(caffe);
+//      }).catch((problem)=>{
+//       console.log("Failed to make coffee");
+//      })
+// }
+// MIcro Task Queue
+async function coffeeMachine(){
+  
   setTimeout(()=>{
-    if(everythingsFine){
-      resolve("Your coffee is ready.")
-    }else{
-      reject("Failed to make coffee")
-    }
-  },3000)
-})
-     coffeeMaker.then((caffe)=>{
-      console.log(caffe);
-     }).catch((problem)=>{
-      console.log("Failed to make coffee");
-     })
+    console.log("coffee might be ready");
+  },5000)
+
 }
