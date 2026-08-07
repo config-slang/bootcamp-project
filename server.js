@@ -284,7 +284,7 @@ import readlineSync from 'readline-sync'
 // console.log(clothes);
 
 // spread operator and rest operator ...
-
+console.log("help me")
 const listValue = [1,2,3,4,5];
 // listValue.push(6,7,8);
 // console.log(listValue)
@@ -296,3 +296,20 @@ console.log("Spread operator : ",...newList);
 //rest operator
 const[first,second,...rest]= newList;
 console.log(rest);
+
+//nullish operator ?? 
+
+const name = "saugattt";
+const value = name ?? "Guest1";
+console.log(value);
+
+
+
+
+
+
+
+
+
+
+export default newList;
