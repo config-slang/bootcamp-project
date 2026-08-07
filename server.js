@@ -1,4 +1,4 @@
-var readlineSync = require('readline-sync');
+import readlineSync from 'readline-sync'
 // console.log("hello world ")
 // console.warn("Dont touch me ")
 
@@ -219,10 +219,80 @@ var readlineSync = require('readline-sync');
 //      })
 // }
 // MIcro Task Queue
-async function coffeeMachine(){
+// async function coffeeMachine(){
   
-  setTimeout(()=>{
-    console.log("coffee might be ready");
-  },5000)
+//   setTimeout(()=>{
+//     console.log("coffee might be ready");
+//   },2000)
+//   return "test";
+// }
+// const intro = await coffeeMachine();
+// console.log(intro);
+// const number1 = 0;
+// const number2 = 0;
+// try{
+//   let result = number1/number2;
+//   console.log(result);
+// }catch(error){
+//   console.log(`Error : ${error}`);
+// }finally{
+//   console.log("Cleanup operations");
+// }
 
-}
+// async function studentList(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       const students = ["Ram","Shyam","Hari"];
+//       resolve(students);
+//     },5000) 
+//   });
+// }
+// async function teacherList(){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//       const teachers = ["sita","gita","mitha"];
+//       resolve(teachers);
+//     },1000) 
+//   });
+// }
+
+// const conclusion = await Promise.all([studentList(),teacherList()]);
+// console.log(conclusion);
+
+//Promise.all()
+//Promise.race()
+//Promise.allSettled()
+//Promise.any()
+
+
+//arraylist
+// const result = [["student1","student2","student3"],["teacher1","teacher2","teacher3"]];
+// const [studentList,teacherList] = result;
+// console.log(studentList);
+// console.log(teacherList);
+
+//objectlist
+// const output = {
+//   electronics : ["Laptop","charger"],
+//   store : ["Bread","noodles"],
+//   clothes : ["shirt","T-shirt"]
+// }
+
+// const {electronics,store,clothes} = output; //destructuring
+// console.log(electronics);
+// console.log(store);
+// console.log(clothes);
+
+// spread operator and rest operator ...
+
+const listValue = [1,2,3,4,5];
+// listValue.push(6,7,8);
+// console.log(listValue)
+
+const newList = [...listValue,6,7,8]; //spread operator
+console.log("New List : ",newList);
+console.log("Spread operator : ",...newList);
+
+//rest operator
+const[first,second,...rest]= newList;
+console.log(rest);
